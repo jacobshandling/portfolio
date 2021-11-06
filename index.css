@@ -8,4 +8,17 @@
 }
 #nav-buttons {
     align-items: flex-end;
-} */
+
+*/
+
+
+
+.dots-between li {
+    list-style: none;
+    white-space: nowrap;
+    display: inline;
+}
+
+.dots-between li::after {
+    content: " •";
+}
