@@ -39,125 +39,82 @@
 
     </head>
     <body id="page-top">
-        <!--Header / Navigation-->
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                <div id="my-info" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto ">
-                    <div class="container">
-                        <a href="#page-top" id="name" class="text-dark text-decoration-none">
-                            <span class="fs-4">Jacob Shandling</span>
-                        </a>
-                        <div class="row" id="contact-links">
-                            <div class="col"></div>
-                            <a class="col" href="https://github.com/jacobshandling" target="_blank" rel="noopener" title="Github">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </a>
-                            &nbsp;
-                            <a class="col" href="https://www.linkedin.com/in/jacob-shandling/" target="_blank" rel="noopener" title="Linkedin">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
-                            </a>
-                            &nbsp;
-                            <a class="col" href="mailto:jacobshandling@pm.me" target="_blank" rel="noopener" title="Email">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                            </a>
-                            <div class="col"></div>
-                        </div>
+        <nav id="navbar">
+            <header><a href="#">Jacob Shandling</a></header>
+            <ul id="nav-links">
+                <li><a href="#welcome-section">Welcome</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tools">Tools</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="welcome-section">
+                <div id="intro">
+                    <h1>Jacob Shandling</h1>
+                    <p>Full Stack Web Developer</p>
+                </div>
+                <img id="portrait" src="https://avatars.githubusercontent.com/u/61553566?v=4" alt="A photo of Jacob Shandling">
+                <ul id="contact-links">
+                    <li><a href="https://github.com/jacobshandling" id="profile-link" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/jacob-shandling/" id="linkedin-link" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a></li>
+                    <li><a href="mailto:jacobshandling@pm.me" id="email-link" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a></li>
+                </ul>
+            </section>
+            <section id="tools">
+                <h2>Tools</h2>
+                <ul id="tool-list">
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Django REST Framework</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Webpack</li>
+                    <li>Git</li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div id="project-tiles">
+                    <div class="project-tile">
+                        <h3>Soundseeker</h3>
+                        <a href="https://github.com/jacobshandling/soundseeker" class="project-source-link">Source</a>
+                        <a href="" class="project-demo-link">Demo</a>
+                    </div>
+                    <div class="project-tile">
+                        <h3>Network</h3>
+                        <a href="#" class="project-link">Source</a>
+                        <a href="" class="project-demo-link">Demo</a>
+                    </div>
+                    <div class="project-tile">
+                        <h3>Kruskals as Clustering</h3>
+                        <a href="#" class="project-link">Source</a>
+                        <a href="" class="project-demo-link">Demo</a>
                     </div>
                 </div>
-                <nav>
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        <!--About-->
-        <section id="about">
-            <div class="container">
-                <h3 class="text-center">About Me</h3>
-                <hr class="mb-4 mt-4">
-                <div class="row">
-                    <div class="col-lg-8 m-auto text-center">
-                        <p class="lead">
-                            Hello hello!
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Projects-->
-        <section id="projects">
-            <div class="container">
-                <h3 class="text-center">Projects</h3>
-                <hr class="mb-4 mt-4">
-                <div class="row">
-                    <div class="col-lg-8 m-auto text-center">
-                        <p class="lead">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Skills-->
-        <section id="skills">
-            <div class="container">
-                <h3 class="text-center">Skills</h3>
-                <hr class="mb-4 mt-4">
-                <div class="row">
-                    <div class="col-lg-8 m-auto text-center">
-                        <ul class="lead dots-between">
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Linode</li>
-                            <li>Git</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Contact-->
-        <section id="contact"></section>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            </section>
+        </main>
+        <footer>
+        </footer>        
+        
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+        <script src="index.js"></script>
 
     </body>
 </html>
