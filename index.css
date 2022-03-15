@@ -152,24 +152,29 @@ main section {
 	/* gap: 2vh; */
 	/* flex-basis: content; */
 }
-#tool-list {
+.tool-row {
     /* margin-top: 6.4rem; */
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 10rem;
 }
-#tool-list li {
+.tool-row li {
 	display: inline;
     margin: auto;
 }
 
 
-#tool-list img {
-    height: 12.8rem;
+
+.tool-logo{
+    height: 8rem;
+    width: auto;
+}
+.tool-logo-lg {
+    height: 11rem;
     width: auto;
 }
 
