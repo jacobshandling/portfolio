@@ -45,6 +45,15 @@ h2 {
     font-size: 6.4rem;
 }
 
+h3 {
+	font-size: 5.6rem;
+}
+
+h4 {
+	font-size: 4.8rem;
+}
+
+
 a {
   text-decoration: none;
   color: var(--main-white);
@@ -183,19 +192,37 @@ main section {
 
 #projects {
 	background-color: var(--main-blue);
-	justify-content: flex-start;
-	flex-basis: content;
+	/* justify-content: flex-start; */
+	/* flex-basis: content; */
 }
 
 #project-tiles {
+	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
 }
 .project-tile {
-	margin: 1rem;
+	/* margin: 1rem; */
+	width: 100%;
+	display: flex;
+	gap: 2rem;
 }
 
+.lalign {
+	justify-content: flex-start;
+}
+
+.ralign {
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+}
+
+.project-preview {
+	height: 42rem;
+	width: auto;
+}
 
 /* footer */
 
