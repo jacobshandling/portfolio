@@ -8,7 +8,7 @@
 	--main-gray: #303841;
 	--main-brown: rgb(84 61 48);
 		
-	font-size: 62.5%;
+	font-size: 12px;
 }
 
 * {
@@ -23,10 +23,50 @@ html, body {
     height: 100%;
 }
 
-@media (max-width: 700px) {
+/* mobile */
+@media
+(max-width: 480px) {
     :root {
-    font-size: 50%;
-  }
+        font-size: 8px;
+    }
+
+}
+
+/* tablet */
+@media
+(min-width: 481px) and 
+(max-width: 768px) {
+    :root {
+        font-size: 10px;
+    }
+
+}
+
+/* smaller screens */
+@media
+(min-width: 769px) and 
+(max-width: 1024px) {
+    :root {
+        font-size: 12px;
+    }
+
+}
+
+/* larger screens */
+@media
+(min-width: 1025px) and
+(max-width:1300px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* huge screens */
+@media
+(min-width: 1301px) {
+    :root {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -109,7 +149,8 @@ main {
 main section {
 	width: 100%;
 	height: auto;
-    padding: 6.2rem 8rem;
+    /* padding: 6.2rem 8rem; */
+	padding: 20rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -210,8 +251,17 @@ main section {
 	gap: 2rem;
 }
 
+.project-info {
+	display: flex;
+	flex-direction: column;
+}
+
 .lalign {
 	justify-content: flex-start;
+}
+
+.lalign .project-info {
+
 }
 
 .ralign {
