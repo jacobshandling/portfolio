@@ -91,7 +91,6 @@ header {
 }
 
 
-
 /* main sections */
 
 main {
@@ -148,6 +147,14 @@ main section {
 
 #contact-links svg {
 	width: 4rem;
+}
+
+#contact-anchor {
+	/* scroll-margin-top: 50vh; */
+	display: block;
+	position: relative;
+	top: -33vh;
+	visibility: hidden;
 }
 
 /* tools */
