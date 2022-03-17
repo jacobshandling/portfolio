@@ -144,11 +144,15 @@ main section {
 	width: 4rem;
 }
 
-#contact-anchor {
+.nav-anchor {
 	display: block;
 	position: relative;
-	top: -33vh;
+	top: -5vh;
 	visibility: hidden;
+}
+
+#contact-anchor {
+	top: -33vh;
 }
 
 #bio p {
