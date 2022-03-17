@@ -8,7 +8,7 @@
 	--main-gray: #303841;
 	--main-brown: rgb(84 61 48);
 		
-	font-size: 0.7vmin;
+	font-size: 0.9vmin;
 }
 
 * {
@@ -235,14 +235,22 @@ main section {
 .project-info {
 	display: flex;
 	flex-direction: column;
+	gap: 2.8rem;
+}
+
+.project-links {
+	display: flex;
+	gap: 2rem;
+}
+
+.project-links a {
+	border: solid;
+	border-radius: 1rem;
+	padding: 1rem;
 }
 
 .lalign {
 	justify-content: flex-start;
-}
-
-.lalign .project-info {
-
 }
 
 .ralign {
@@ -265,15 +273,4 @@ footer {
 	background: var(--main-gray);
 	border-top: 0.2vh solid var(--main-wine);
 	font-size: 4rem;	
-}
-
-
-.dots-between li {
-    list-style: none;
-    white-space: nowrap;
-    display: inline;
-}
-
-.dots-between li::after {
-    content: " •";
 }
