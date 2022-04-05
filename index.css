@@ -28,7 +28,6 @@ html, body {
     height: 100%;
 }
 
-
 body {
 	display: flex;
 	flex-direction: column;
@@ -144,12 +143,30 @@ main section {
 
 #contact-links {
 	display: flex;
+	align-items: center;
 	gap: 4rem;
 	font-size: 2rem;
+	padding: .7rem;
+	border-radius: .9rem;
 }
 
 #contact-links svg {
 	width: 4rem;
+}
+
+.highlight-animate {
+	animation-name: highlight;
+	animation-duration: 1600ms;
+}
+
+@keyframes highlight {
+	50% {
+		background-color: var(--main-wine);
+	}	
+
+	100% {
+		background-color: inherit;
+	}
 }
 
 .nav-anchor {
