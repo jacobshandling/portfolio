@@ -5,9 +5,8 @@ function setCopyright() {
 }
 
 function highlightElement(element) {
-    const origClass = element.className;
-    setTimeout(() => {element.className = "highlight-animate";}, 100)
-    setTimeout(() => {element.className = origClass;}, 1700);
+    setTimeout(() => {element.classList.toggle("highlight-animate")}, 100)
+    setTimeout(() => {element.classList.toggle("highlight-animate")}, 1700);
 }
 
 function addContactAnimation() {

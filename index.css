@@ -156,7 +156,7 @@ main section {
 
 .highlight-animate {
 	animation-name: highlight;
-	animation-duration: 1600ms;
+	animation-duration: 2000ms;
 }
 
 @keyframes highlight {
