@@ -103,14 +103,10 @@ main {
 	margin-top: 6vh;
 	width: 100%;
 	flex: 1 0 auto;
-	/* display: flex;
-	flex-direction: column;
-	align-items: center; */
 }
 
 main section {
 	width: 100%;
-    /* padding: 6.2rem 8rem; */
 	padding: 5rem 20rem;
 	display: flex;
 	flex-direction: column;
@@ -188,19 +184,12 @@ main section {
 
 #tools {
 	background-color: gray;
-    /* justify-content: space-between; */
-	/* justify-content: flex-start;	 */
-	/* gap: 2vh; */
-	/* flex-basis: content; */
 }
 .tool-row {
-    /* margin-top: 6.4rem; */
 	width: 100%;
 	display: flex;
-	/* justify-content: space-between; */
     align-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     gap: 10rem;
 }
 
@@ -231,8 +220,6 @@ main section {
 
 #projects {
 	background-color: var(--main-teal);
-	/* justify-content: flex-start; */
-	/* flex-basis: content; */
 }
 
 #project-tiles {
@@ -240,7 +227,6 @@ main section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* gap: 8rem; */
 }
 
 
@@ -291,7 +277,6 @@ main section {
 /* footer */
 
 footer {
-    /* flex-shrink: 0; */
 	font-weight: 300;
 	text-align: center;
 	padding: 4rem;
@@ -304,16 +289,38 @@ footer {
 	:root {
 		font-size: 3px;
 	}
-	p {
-		font-size: 5rem;
+
+	nav {
+		padding: 1rem;
+		flex-direction: column;
 	}
+
 	header {
-		font-size: 5.8rem;
+		font-size: 7rem;
 	}
+
 	#nav-links {
-		font-size: 5rem;
+		font-size: 8rem;
+	}
+
+	#intro * {
+		font-size: 8rem;
+	}
+	#portrait {
+		width: 40rem;
+	}
+	#contact-links {
+		font-size: 4rem;
+	}
+	#contact-links svg {
+		width: 8rem;
+	}
+
+	p {
+		font-size: 7rem;
 	}
 }
+
 @media (min-width: 768px) {
 	:root {
 		font-size: 5px;
