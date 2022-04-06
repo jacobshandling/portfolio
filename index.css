@@ -290,14 +290,14 @@ main section {
 
 /* footer */
 
-footer {
+footer p {
     /* flex-shrink: 0; */
-	font-weight: 300;
+	/* font-weight: 300; */
 	text-align: center;
-	padding: 4rem;
+	padding: 2rem;
 	background: var(--main-gray);
 	border-top: 0.2vh solid var(--main-wine);
-	font-size: 4rem;	
+	font-size: 2rem;	
 }
 
 @media (max-width: 767px) {
