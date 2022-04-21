@@ -5,7 +5,7 @@ function setCopyright() {
 }
 
 function highlightElement(element) {
-    setTimeout(() => {element.classList.toggle("highlight-animate")}, 100)
+    setTimeout(() => {element.classList.toggle("highlight-animate")}, 250)
     setTimeout(() => {element.classList.toggle("highlight-animate")}, 1700);
 }
 
