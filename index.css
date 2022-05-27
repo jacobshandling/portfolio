@@ -49,7 +49,7 @@ h4 {
 }
 
 p {
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 a {
@@ -111,6 +111,7 @@ main {
 }
 
 main section {
+	min-height: 86vh;
 	width: 100%;
 	padding: 5rem 5%;
 	display: flex;
@@ -182,19 +183,32 @@ main section {
 	top: -33vh;
 }
 
+#bio {
+	display: flex;
+	justify-content: center;
+}
+
 #bio p {
 	text-align: center;
+	max-width: 70%;
 }
 
 /* tools */
 
 #tools {
 	background-color: gray;
-    /* justify-content: space-between; */
-	/* justify-content: flex-start;	 */
-	/* gap: 2vh; */
-	/* flex-basis: content; */
+	display: flex;
+	flex-direction: column;
 }
+
+#tool-icon-grid {
+	width: 100%;
+	flex-grow: 0.8;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
 .tool-row {
     /* margin-top: 6.4rem; */
 	width: 100%;
