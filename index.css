@@ -25,6 +25,7 @@
 
 html, body {
     height: 100%;
+	max-width: 100vw;
 }
 
 body {
@@ -58,6 +59,10 @@ p {
 a {
   text-decoration: none;
   color: var(--main-white);
+}
+
+a:hover {
+	color: var(--main-gold);
 }
 
 ul {
@@ -307,10 +312,6 @@ main section {
 	padding: 8rem;
 }
 
-.first-project {
-	border-top: none;
-}
-
 .project-info {
 	display: flex;
 	flex-direction: column;
@@ -414,6 +415,23 @@ footer p {
 
 	#bio p {
 		max-width: 80%;
+	}
+
+	.project-preview {
+		display: none;
+	}
+
+	.project-tile {
+		gap: 0;
+		text-align: center;
+	}
+
+	.project-info {
+		text-align: center;
+	}
+
+	.project-links {
+		justify-content: center;
 	}
 }
 
