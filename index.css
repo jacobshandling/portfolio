@@ -5,6 +5,7 @@
 	--main-gold: rgb(221 202 140);
 	--main-blue: rgb(30 39 59);
 	--main-wine: rgb(168 83 72);
+	--accent-wine: rgb(198 113 102);
 	--main-gray: #303841;
 	--main-brown: rgb(84 61 48);
 	--nav-opacity: .9;
@@ -57,10 +58,6 @@ p {
 a {
   text-decoration: none;
   color: var(--main-white);
-}
-
-a:hover {
-	color: var(--main-gold);
 }
 
 ul {
@@ -118,21 +115,28 @@ header {
 	opacity: var(--nav-opacity);
 }
 
-.nav-link {
-	padding: 1rem;
-	border-radius: 25%;
+#nav-links li {
+	padding: 2rem;
+	border-radius: 5%;
+	width: 25%;
 }
 
-.nav-link:hover {
+#nav-links li:hover {
 	animation-name: highlight-sticky;
 	animation-duration: 500ms;
 	animation-fill-mode: forwards;
 }
 @keyframes highlight-sticky {
 	100% {
-		background-color: var(--main-teal);
+		background-color: var(--accent-wine);
 	}
 }
+	
+.nav-link {
+	padding: 1rem;
+	border-radius: 25%;
+}
+
 
 /* main sections */
 
@@ -198,27 +202,6 @@ main section {
 	50% {
 		background-color: var(--main-wine);
 	}
-	100% {
-		background-color: inherit;
-	}
-}
-
-.highlight-sticky-animate {
-	animation-name: highlight-sticky;
-	animation-duration: 1850ms;
-	animation-fill-mode: forwards;
-}
-@keyframes highlight-sticky {
-	100% {
-		background-color: white;
-	}
-}
-
-.unhighlight-animate {
-	animation-name: unhighlight;
-	animation-duration: 925ms;
-}
-@keyframes unhighlight {
 	100% {
 		background-color: inherit;
 	}
@@ -397,6 +380,7 @@ footer p {
 
 	#nav-links {
 		flex-direction: column;
+		align-items: center;
 		position: fixed;
 		top: -100%; /* Hide the links to the right of the viewport */
 		width: 100%;
