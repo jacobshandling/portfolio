@@ -9,14 +9,6 @@ function highlightElement(element) {
     setTimeout(() => {element.classList.toggle("highlight-animate")}, 1700);
 }
 
-function addContactAnimation() {
-    const cLinks = document.querySelector("#contact-links");
-    const navLink = document.querySelector("#contact-nav-link");
-    navLink.onclick = () => {
-        highlightElement(cLinks);
-    };
-}
-
 function toggleHamburgerMenu() {
     const hamburger = document.querySelector('#hamburger');
     const navLinksContainer = document.querySelector('#nav-links');
@@ -24,19 +16,26 @@ function toggleHamburgerMenu() {
     navLinksContainer.classList.toggle('active');
     };
 
-
 function setHamburgerMenuResponsiveness() {
     const hamburger = document.querySelector('#hamburger');
     hamburger.onclick = () => toggleHamburgerMenu();
     
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(navLink => {
-        navLink.onclick = () => toggleHamburgerMenu();
-    })
+        if (navLink.id=="contact-nav-link") {
+            // 'Contact' nav link will both close the hamburger menu AND animate the contact links
+            const cLinks = document.querySelector("#contact-links");
+            navLink.onclick = () => {
+                toggleHamburgerMenu();
+                highlightElement(cLinks);
+            }
+        } else {
+            navLink.onclick = () => toggleHamburgerMenu();
+        }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    addContactAnimation()
     setCopyright();
     setHamburgerMenuResponsiveness();
 });
