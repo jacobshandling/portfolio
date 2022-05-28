@@ -140,13 +140,13 @@ main section {
 
 
 #welcome-section {
-	min-height: 96vh;
+	padding-top: 20rem;
+	min-height: 94vh;
 	height: auto;
 	background-color: var(--main-blue);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	gap: 1.8rem;
+	gap: 0;
 }
 
 #intro {
@@ -160,6 +160,7 @@ main section {
 
 #contact-links {
 	width: 26rem;
+	margin-bottom: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
