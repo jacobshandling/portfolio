@@ -398,6 +398,23 @@ footer p {
 	#nav-links a {
 		font-size: 4rem;
 	}
+
+	#nav-links li {
+		width: auto;
+	}
+
+	#welcome-section {
+		padding-top: 11rem;
+		gap: 3rem;
+	}
+
+	#contact-links {
+		margin-bottom: 1rem;
+	}
+
+	#bio p {
+		max-width: 80%;
+	}
 }
 
 @media (max-width: 900px) {
