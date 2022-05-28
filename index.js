@@ -17,8 +17,26 @@ function addContactAnimation() {
     };
 }
 
+function toggleHamburgerMenu() {
+    const hamburger = document.querySelector('#hamburger');
+    const navLinksContainer = document.querySelector('#nav-links');
+    hamburger.classList.toggle('active');
+    navLinksContainer.classList.toggle('active');
+    };
+
+
+function setHamburgerMenuResponsiveness() {
+    const hamburger = document.querySelector('#hamburger');
+    hamburger.onclick = () => toggleHamburgerMenu();
+    
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(navLink => {
+        navLink.onclick = () => toggleHamburgerMenu();
+    })
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    var testvar = 'hello';
     addContactAnimation()
     setCopyright();
+    setHamburgerMenuResponsiveness();
 });
