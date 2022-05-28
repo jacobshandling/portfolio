@@ -7,6 +7,7 @@
 	--main-wine: rgb(168 83 72);
 	--main-gray: #303841;
 	--main-brown: rgb(84 61 48);
+	--nav-opacity: .9;
 		
 	font-size: 10px;
 	scroll-behavior: smooth;
@@ -72,7 +73,7 @@ ul {
 
 nav {
 	width: 100%;
-	height: auto;
+	height: 8rem;
 	padding: 2vh 5vw;
 	display: flex;
 	align-items: center;
@@ -88,17 +89,6 @@ header {
 	font-size: 3.2rem;
 	width: auto;
 
-}
-
-/* header a {
-	width: auto;
-} */
-
-#hamburger-and-nav-links {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 3.2rem;
 }
 
 #hamburger {
@@ -121,11 +111,11 @@ header {
 }
 
 #nav-links {
-	margin: auto;
 	display: flex;
 	justify-content: center;
 	gap: 4vw;
 	font-size: 2.4rem;
+	opacity: var(--nav-opacity);
 }
 
 /* main sections */
@@ -346,16 +336,12 @@ footer p {
 }
 
 @media (max-width: 850px) {
-	:root {
+	/* :root {
 		font-size: 5px;
-	}
+	} */
 
 	header {
 		font-size: 4.2rem;
-	}
-
-	#hamburger-and-nav-links {
-		width: auto;
 	}
 	
 	#hamburger {
@@ -382,9 +368,11 @@ footer p {
 	}
 	
 	#nav-links.active {
-		top: 0;
-		position: static;
-		gap: 4vh;
+		padding: 2rem;
+		top: 8rem;
+		left: 0;
+		width: 100%;
+		background-color: var(--main-wine);
 	}
 
 	#nav-links a {
