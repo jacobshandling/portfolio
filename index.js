@@ -30,8 +30,16 @@ function setHamburgerMenuResponsiveness() {
                 highlightElement(cLinks);
             }
         } else {
-            navLink.onclick = () => toggleHamburgerMenu();
+            navLink.onclick = () => {
+                toggleHamburgerMenu();
+            };
         }
+        // navLink.addEventListener('mouseover', () => {
+        //     navLink.classList.toggle('highlight-sticky-animate');
+        // });
+        // navLink.addEventListener('mouseleave,', () => {
+        //     navLink.classList.toggle('unhighlight-animate');
+        // });
     });
 }
 

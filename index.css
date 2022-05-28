@@ -118,6 +118,22 @@ header {
 	opacity: var(--nav-opacity);
 }
 
+.nav-link {
+	padding: 1rem;
+	border-radius: 25%;
+}
+
+.nav-link:hover {
+	animation-name: highlight-sticky;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+@keyframes highlight-sticky {
+	100% {
+		background-color: var(--main-teal);
+	}
+}
+
 /* main sections */
 
 main {
@@ -178,12 +194,31 @@ main section {
 	animation-name: highlight;
 	animation-duration: 1850ms;
 }
-
 @keyframes highlight {
 	50% {
 		background-color: var(--main-wine);
-	}	
+	}
+	100% {
+		background-color: inherit;
+	}
+}
 
+.highlight-sticky-animate {
+	animation-name: highlight-sticky;
+	animation-duration: 1850ms;
+	animation-fill-mode: forwards;
+}
+@keyframes highlight-sticky {
+	100% {
+		background-color: white;
+	}
+}
+
+.unhighlight-animate {
+	animation-name: unhighlight;
+	animation-duration: 925ms;
+}
+@keyframes unhighlight {
 	100% {
 		background-color: inherit;
 	}
