@@ -178,6 +178,7 @@ main section {
 #portrait {
 	width: 26rem;
 	border-radius: 50%;
+	margin-bottom: 3rem;
 }
 
 #contact-links {
@@ -404,6 +405,10 @@ footer p {
 	#welcome-section {
 		padding-top: 11rem;
 		gap: 3rem;
+	}
+
+	#portrait {
+		margin-bottom: 0;
 	}
 
 	#contact-links {
