@@ -61,7 +61,7 @@ a {
   color: var(--main-white);
 }
 
-a:hover {
+main a:hover , main a:active {
 	color: var(--main-gold);
 }
 
@@ -97,9 +97,7 @@ header {
 	display: none;
 	width: 4rem;
 	cursor: pointer;
-	border:	.2rem solid;
 	padding: .5rem .7rem;
-	border-radius: 15%;
 }
 
 .bar {
@@ -126,7 +124,7 @@ header {
 	width: 25%;
 }
 
-#nav-links li:hover {
+#nav-links li:hover, #nav-links li:active {
 	animation-name: highlight-sticky;
 	animation-duration: 500ms;
 	animation-fill-mode: forwards;
@@ -141,7 +139,6 @@ header {
 	padding: 1rem;
 	border-radius: 25%;
 }
-
 
 /* main sections */
 
