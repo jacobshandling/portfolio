@@ -236,58 +236,29 @@ main section {
 
 #tools {
 	background-color: gray;
-	display: flex;
-	flex-direction: column;
 }
 
 #tool-icon-grid {
 	width: 100%;
-	flex-grow: 0.8;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
 }
 
 .tool-row {
-    /* margin-top: 6.4rem; */
 	width: 100%;
+	margin-bottom: 7rem;
 	display: flex;
-	/* justify-content: space-between; */
-    align-content: center;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    gap: 10rem;
-}
-
-.tool-row-lg {
-	gap: 0rem;
-}
-
-.tool-row li {
-	display: inline;
-    margin: auto;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .tool-logo{
-    height: 8rem;
-    width: auto;
+	width: auto;
+    height: 10rem;
 }
-.tool-logo-lg {
-    height: 11rem;
-    width: auto;
-}
-
-#python-logo {
-	margin: -5rem;
-}
-
 
 /* projects */
 
 #projects {
 	background-color: var(--main-teal);
-	/* justify-content: flex-start; */
-	/* flex-basis: content; */
 }
 
 #project-tiles {
@@ -295,7 +266,6 @@ main section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* gap: 8rem; */
 }
 
 #project-tiles * {
@@ -435,6 +405,10 @@ footer p {
 
 	.project-links {
 		justify-content: center;
+	}
+
+	.tool-logo {
+		height: 4rem;	
 	}
 }
 
