@@ -229,7 +229,7 @@ section {
 
 #bio p {
 	text-align: center;
-	max-width: 70%;
+	max-width: 100%;
 }
 
 /* tools */
@@ -254,9 +254,15 @@ section {
 	justify-content: space-around;
 }
 
-.tool-logo{
-	width: auto;
-    height: 10rem;
+/* target the nth tool row logos */
+.tool-row:nth-child(1) .tool-logo {
+	height: 10rem;
+}
+.tool-row:nth-child(2) .tool-logo {
+	height: 9rem;
+}
+.tool-row:nth-child(3) .tool-logo {
+	height: 7.5rem;	
 }
 
 /* projects */
@@ -424,17 +430,4 @@ footer p {
 		height: 4rem;	
 	}
 }
-
-@media (max-width: 900px) {
-	:root {
-		font-size: 6px;
-	}
-}
-
-@media (max-width: 1200px) {
-	:root {
-		font-size: 8px;
-	}
-}
-
 /* above max-width 1200px uses normal styling */
