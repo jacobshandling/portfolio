@@ -149,7 +149,7 @@ main {
 	flex: 1 0 auto;
 }
 
-main section {
+section {
 	min-height: 86vh;
 	width: 100%;
 	padding: 5rem 5%;
@@ -239,7 +239,11 @@ main section {
 }
 
 #tool-icon-grid {
+	flex-grow: 2;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .tool-row {
@@ -247,7 +251,7 @@ main section {
 	margin-bottom: 7rem;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .tool-logo{
@@ -268,15 +272,12 @@ main section {
 	align-items: center;
 }
 
-#project-tiles * {
-	width: auto;
-}
-
 .project-tile {
 	border-top: solid;
 	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 8rem;
 	padding: 8rem;
 }
@@ -325,12 +326,12 @@ footer p {
 }
 
 @media (max-width: 850px) {
-	/* :root {
-		font-size: 5px;
-	} */
-
 	header {
 		font-size: 4.2rem;
+	}
+	
+	h2 {
+		font-size: 6rem;
 	}
 	
 	#hamburger {
@@ -387,18 +388,19 @@ footer p {
 	}
 
 	#bio p {
-		max-width: 80%;
+		max-width: 100%;
+	}
+
+	.project-tile {
+		padding: 2rem 0rem;
+		gap: 0;
+		text-align: center;
 	}
 
 	.project-preview {
 		display: none;
 	}
-
-	.project-tile {
-		gap: 0;
-		text-align: center;
-	}
-
+	
 	.project-info {
 		text-align: center;
 	}
@@ -407,7 +409,18 @@ footer p {
 		justify-content: center;
 	}
 
-	.tool-logo {
+	.tool-row {
+		justify-content: space-between;
+	}
+
+	/* target the nth tool row logos */
+	.tool-row:nth-child(1) .tool-logo {
+		height: 5.5rem;
+	}
+	.tool-row:nth-child(2) .tool-logo {
+		height: 5rem;
+	}
+	.tool-row:nth-child(3) .tool-logo {
 		height: 4rem;	
 	}
 }
