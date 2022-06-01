@@ -119,13 +119,12 @@ header {
 	opacity: var(--nav-opacity);
 }
 
-#nav-links li {
-	padding: 2rem;
+.nav-link {
 	border-radius: 5%;
-	width: 25%;
+	padding: 2rem;
 }
 
-#nav-links li:hover, #nav-links li:active {
+.nav-link:hover, .nav-link:active {
 	animation-name: highlight-sticky;
 	animation-duration: 500ms;
 	animation-fill-mode: forwards;
@@ -134,11 +133,6 @@ header {
 	100% {
 		background-color: var(--accent-wine);
 	}
-}
-	
-.nav-link {
-	padding: 1rem;
-	border-radius: 25%;
 }
 
 /* main sections */
@@ -372,12 +366,8 @@ footer p {
 		background-color: var(--main-wine);
 	}
 
-	#nav-links a {
+	.nav-link {
 		font-size: 4rem;
-	}
-
-	#nav-links li {
-		width: auto;
 	}
 
 	#welcome-section {
