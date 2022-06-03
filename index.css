@@ -1,5 +1,6 @@
 :root {
 	--main-white: rgb(218	221	220);
+<<<<<<< Updated upstream
 	--main-gold: rgb(255, 188, 66);
 	--main-blue: rgb(44	106	161);
 	--light-blue: rgb(64 126 181);
@@ -7,6 +8,18 @@
 	--main-wine: rgb(143, 45, 86);
 	--main-pink: rgb(216, 17, 89);
 	
+=======
+	--main-teal: rgb(111 152 171);
+	--main-orange: rgb(253 132 75);
+	--pale-orange: rgba(203, 82, 25, .55);
+	/* --main-gold: rgb(221 202 140); */
+	--main-blue: rgb(30 39 59);
+	--light-blue: rgb(100 109 129);
+	--med-blue: rgb(65, 74, 94);
+	--accent-wine: rgb(198 113 102);
+	--main-gray: #303841;
+	--main-brown: rgb(84 61 48);
+>>>>>>> Stashed changes
 	--nav-opacity: .9;
 		
 	font-size: 10px;
@@ -62,7 +75,7 @@ a {
 }
 
 main a:hover , main a:active {
-	color: var(--main-gold);
+	color: var(--main-orange);
 }
 
 ul {
@@ -130,8 +143,12 @@ header {
 }
 @keyframes highlight-sticky {
 	100% {
+<<<<<<< Updated upstream
 		color: var(--main-gold);
 		background-color: var(--main-blue);
+=======
+		background-color: var(--pale-orange);
+>>>>>>> Stashed changes
 	}
 }
 
@@ -198,7 +215,7 @@ section {
 }
 @keyframes highlight {
 	50% {
-		background-color: var(--main-wine);
+		background-color: var(--pale-orange);
 	}
 	100% {
 		background-color: inherit;
@@ -269,7 +286,7 @@ section {
 /* projects */
 
 #projects {
-	background-color: var(--main-teal);
+	background-color: var(--med-blue);
 }
 
 #project-tiles {
@@ -328,7 +345,11 @@ footer p {
 	text-align: center;
 	padding: 2rem;
 	background: var(--main-gray);
+<<<<<<< Updated upstream
 	border-top: 0.2vh solid var(--main-teal);
+=======
+	border-top: 0.2vh solid var(--light-blue);
+>>>>>>> Stashed changes
 	font-size: 2rem;	
 }
 
@@ -370,7 +391,11 @@ footer p {
 		top: 8rem;
 		left: 0;
 		width: 100%;
+<<<<<<< Updated upstream
 		background-color: var(--main-teal);
+=======
+		background-color: var(--light-blue);
+>>>>>>> Stashed changes
 	}
 
 	.nav-link {
