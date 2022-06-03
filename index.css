@@ -227,10 +227,10 @@ section {
 	max-width: 1200px;
 }
 
-#resume-container {
+#resume-link {
 	padding: 1rem;
 	border-radius: 1rem;
-	border: solid 2px white;
+	border: solid 2px;
 }
 
 /* tools */
