@@ -219,11 +219,18 @@ section {
 #bio {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 5rem;
 }
 
 #bio p {
 	text-align: center;
 	max-width: 1200px;
+}
+
+#resume-container {
+	padding: 1rem;
+	border-radius: 1rem;
+	border: solid 2px white;
 }
 
 /* tools */
