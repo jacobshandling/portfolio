@@ -24,6 +24,11 @@
         <meta name="twitter:title" content="Jacob Shandling">
         <meta name="twitter:description" content="Software Engineer and Musician">
 
+        <!-- google font import -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
         <!--Custom styling-->
         <link rel="stylesheet" type="text/css" href="index.css" >
 
@@ -84,9 +89,7 @@
                 <h2>Projects</h2>
                 <div id="project-tiles">
                     <div class="project-tile lalign first-project">
-                        <div>
-                            <img class="project-preview" src="media/ss-screenshot.png" loading="lazy">
-                        </div>
+                        <img class="project-preview" src="media/ss-screenshot.png" loading="lazy">
                         <div class="project-info">
                             <h3><a href="https://www.soundseeker.app">Soundseeker</a></h3>
                             <p class="project-description">A tool for organizing and juxtaposing musical ideas in the form of short audio recordings. Built with Django, Django REST Framework, Webpack, React/Javascript, HTML, and CSS. Deployed with Heroku and Amazon S3.</p>
@@ -108,7 +111,7 @@
                             </figcaption>
                         </figure>
                         <div class="project-info">
-                            <h3><a href="https://github.com/jacobshandling/kruskals-as-clustering">Clustering with Kruskal's algorithm and the Union Find data structure</a></h3>
+                            <h3><a href="https://github.com/jacobshandling/kruskals-as-clustering">Clustering with Kruskal's Algorithm and the Union Find Data Structure</a></h3>
                             <p class="project-description">My implementations of Kruskal's algorithm and the union find data structure, applied to the clustering problem. Python.</p>
                             <div class="project-links">
                                 <a href="https://github.com/jacobshandling/kruskals-as-clustering">Source</a>
@@ -116,9 +119,16 @@
                         </div>
                     </div>
                     <div class="project-tile lalign">
-                        <div>
-                            <img class="project-preview" src="media/jake-shandling-drums.png" loading="lazy">
-                        </div>
+                        <figure>
+                            <img 
+                                class="project-preview" 
+                                src="media/jake-shandling-drums.png" 
+                                loading="lazy"
+                            />
+                            <figcaption>
+                                Jacques Apothéloz 2018
+                            </figcaption>
+                        </figure>
                         <div class="project-info">
                             <h3><a href="https://jakeshandling.com">Drummer Jake Shandling</a></h3>
                             <p class="project-description">The website for my career as a jazz drummer. Built with HTML, CSS + Bootstrap, and a tiny amount of JavaScript.</p>
@@ -129,9 +139,11 @@
                         </div>
                     </div>
                     <div class="project-tile ralign">
-                        <div>
-                            <img class="project-preview" src="media/dev-temp.svg" loading="lazy">
-                        </div>
+                        <img 
+                            class="project-preview" 
+                            src="media/dev-temp.svg" 
+                            loading="lazy" 
+                        />
                         <div class="project-info">
                             <h3><a href="#">Web Development Portfolio</a></h3>
                             <p class="project-description">This webpage, built with vanilla HTML, vanilla CSS, and vanilla Javascript.</p>
@@ -142,7 +154,11 @@
                         </div>
                     </div>
                     <div class="project-tile">
-                        <h3><a href="https://github.com/jacobshandling" id="github-link">See more projects on GitHub</a></h3>
+                        <h3 class="project-links">
+                            <a href="https://github.com/jacobshandling" id="github-link">
+                                    More Projects on GitHub
+                            </a>
+                        </h3>
                     </div>
                 </div>
             </section>
