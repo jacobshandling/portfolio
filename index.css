@@ -313,8 +313,11 @@ section {
 }
 
 .project-preview {
-	height: 42rem;
+	display: block;
+	max-width: 500px;
+	max-height: 300px;
 	width: auto;
+	height: auto;
 }
 
 /* footer */
