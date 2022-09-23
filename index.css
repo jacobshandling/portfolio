@@ -155,7 +155,7 @@ section {
 
 
 #welcome-section {
-	padding-top: 20rem;
+	padding-top: 22vh;
 	min-height: 94vh;
 	height: auto;
 	background-color: var(--med-blue);
@@ -337,7 +337,7 @@ footer p {
 	font-size: 2rem;	
 }
 
-@media (max-width: 963px) {
+@media (max-width: 770px) {
 	header {
 		font-size: 4.2rem;
 	}
@@ -383,7 +383,7 @@ footer p {
 	}
 
 	#welcome-section {
-		padding-top: 9rem;
+		padding-top: 10vh;
 	}
 
 	#portrait {
