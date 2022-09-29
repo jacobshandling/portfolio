@@ -284,7 +284,7 @@ section {
 	align-items: center;
 	justify-content: center;
 	gap: 8rem;
-	padding: 8rem;
+	padding: 8rem 2rem;
 }
 
 .project-info {
