@@ -225,6 +225,10 @@ section {
 	max-width: 1200px;
 }
 
+#resume-container {
+	margin-bottom: 5rem;
+}
+
 #resume-link {
 	padding: 1rem;
 	border-radius: 1rem;
@@ -330,6 +334,10 @@ figcaption {
 	font-style: italic;
 	text-align: center;
 	font-size: 1.8rem;
+}
+
+cite {
+	font-size: 2.8rem;
 }
 
 /* footer */
