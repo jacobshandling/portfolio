@@ -75,8 +75,8 @@ ul {
 
 nav {
 	width: 100%;
-	height: 8rem;
-	padding: 2vh 5vw;
+	min-height: 10rem;
+	padding: 1vh 5vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -87,8 +87,8 @@ nav {
 	background-color: var(--main-blue);
 }
 
-header * {
-	font-size: 4rem;
+header {
+	font-size: 5rem;
 	width: auto;
 }
 
@@ -113,7 +113,7 @@ header * {
 	display: flex;
 	justify-content: center;
 	gap: 4vw;
-	font-size: 2.4rem;
+	font-size: 2.8rem;
 	opacity: var(--nav-opacity);
 }
 
@@ -221,8 +221,10 @@ section {
 }
 
 #bio p {
+	font-size: 3.7rem;
 	text-align: center;
 	max-width: 1200px;
+	text-align: center;
 }
 
 #resume-container {
@@ -351,10 +353,6 @@ footer p {
 }
 
 @media (max-width: 992px) {
-	header {
-		font-size: 4.2rem;
-	}
-	
 	h2 {
 		font-size: 6rem;
 	}
@@ -393,10 +391,6 @@ footer p {
 
 	.nav-link {
 		font-size: 4rem;
-	}
-
-	#welcome-section {
-		padding-top: 10vh;
 	}
 
 	#portrait {
